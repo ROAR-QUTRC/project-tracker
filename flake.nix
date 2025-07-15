@@ -14,7 +14,11 @@
         };
       in {
         devShells.default = pkgs.mkShell {
-          packages = [ pkgs.pocketbase ];
+          packages = [ 
+            pkgs.pocketbase 
+            pkgs.nodejs_24
+            pkgs.yarn
+          ];
         };
       });
 }
